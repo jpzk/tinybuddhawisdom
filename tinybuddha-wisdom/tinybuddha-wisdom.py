@@ -18,9 +18,9 @@ along with tinybuddha-wisdom.  If not, see <http://www.gnu.org/licenses/>.
 from http.client import HTTPConnection
 
 class TinyBuddhaWisdom:
-    def scrape(self):
-        h1 = HTTPConnection('www.tinybuddha.com')
-        h1.request('GET', '/', 
+    def fetch(self):
+        h1 = HTTPConnection('tinybuddha.com')
+        h1.request('GET', '/wp-content/plugins/tiny-buddha-host/wisdom.txt', 
         headers={
             'Accept':'text/html', 
             'Accept-Charset': 'iso-8859-1', 
@@ -35,10 +35,6 @@ class TinyBuddhaWisdom:
         response = h1.getresponse()
         data = str(response.read(), 'utf-8')
 
-        cut = data.split("Click for Quotes")[1]
-        cut = cut.split('home-ad')[0]
-        cut = cut[cut.find('<a'):cut.find('</a')]
-        cut = cut[cut.find('>')+1:]
-        return cut
+        return data 
 
-print("Tiny Buddha: " + TinyBuddhaWisdom().scrape())
+print("Tiny Buddha: " + TinyBuddhaWisdom().fetch())
