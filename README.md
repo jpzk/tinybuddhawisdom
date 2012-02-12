@@ -2,7 +2,7 @@
 
 The [Tiny Buddha](http://www.tinybuddha.com) wisdoms for your shell. Thanks Lori (the author) for granting the use of her site in such nerdy way :).
 
-Add it to your shell startup configuration and everytime you login or spawn a shell you'll be greeted by the latest wisdom quote. 
+Add it to your shell startup configuration and everytime you login or spawn a shell you'll be greeted with the latest wisdom quote. 
 
 ## Example
 
