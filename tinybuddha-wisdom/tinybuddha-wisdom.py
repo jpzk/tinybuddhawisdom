@@ -41,4 +41,4 @@ class TinyBuddhaWisdom:
         cut = cut[cut.find('>')+1:]
         return cut
 
-print(TinyBuddhaWisdom().scrape())
+print("Tiny Buddha: " + TinyBuddhaWisdom().scrape())
