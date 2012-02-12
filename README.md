@@ -7,7 +7,9 @@ Add it to your shell startup configuration and everytime you login or spawn a sh
 ## Example
 
 <pre>
-Tiny Buddha: “Uncertainty is the only certainty there is, and knowing how to live with insecurity is the only security.” -John Allen Paulos
+Tiny Buddha: “Uncertainty is the only certainty there is, 
+and knowing how to live with insecurity is the only security.” 
+-John Allen Paulos
 localhost :: ~ % 
 </pre>
 
