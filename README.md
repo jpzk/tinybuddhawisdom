@@ -18,7 +18,13 @@ localhost :: ~ %
 Add the following line to your e.g. .zshrc, .bashrc. It depends which shell you're actually using. It is important to use python 3 (because http.client is used).  
 
 <pre>
-python3 /home/jendrik/tinybuddha-fortune/tinybuddha-fortune/tinybuddha-fortune.py
+$ cd ~
+$ git clone git://github.com/jpzk/tinybuddha-wisdom.git
+</pre>
+
+add the following to your shell startup configuration:
+<pre>
+python3 ~/tinybuddha-wisdom/tinybuddha-wisdom/tinybuddha-wisdom.py
 </pre>
 
 ## License 
