@@ -19,8 +19,14 @@ from http.client import HTTPConnection
 
 class TinyBuddhaWisdom:
     def fetch(self):
-        h1 = HTTPConnection('tinybuddha.com')
-        h1.request('GET', '/wp-content/plugins/tiny-buddha-host/wisdom.txt', 
+        try:
+            h1 = HTTPConnection('tinybuddha.com')       
+            h1.request('GET', '/wp-content/plugins/tiny-buddha-host/wisdom.txt') 
+        except Exception:
+            return "\"If you are patient in one moment of anger" +\
+                   "you will escape one hundred days of sorrow.\" " +\
+                   "-Chinese Proverb" 
+
         headers={
             'Accept':'text/html', 
             'Accept-Charset': 'iso-8859-1', 
@@ -29,8 +35,7 @@ class TinyBuddhaWisdom:
             'Connection': 'keep-alive',
             'DNT': '1', 
             'Host': 'tinybuddha.com',
-            'User-Agent': 'Mozilla/5.0'}
-        )
+            'User-Agent': 'Mozilla/5.0'}        
 
         response = h1.getresponse()
         data = str(response.read(), 'utf-8')
