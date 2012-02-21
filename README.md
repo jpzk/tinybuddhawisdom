@@ -1,8 +1,6 @@
 # tinybuddha-wisdom
 
-The [Tiny Buddha](http://www.tinybuddha.com) wisdoms for your shell. Thanks Lori (the author) for granting the use of her site in such nerdy way :). Compatible with Python 2.x and Python 3.x.
-
-Add it to your shell startup configuration and everytime you login or spawn a shell you'll be greeted with the latest wisdom quote. 
+The [Tiny Buddha](http://www.tinybuddha.com) wisdoms for your shell. Thanks Lori (the author) for granting the use of her site in such nerdy way :). Compatible with Python 2.x and Python 3.x. Add it to your shell startup configuration and everytime you login or spawn a shell you'll be greeted with the latest wisdom quote. 
 
 ## Example
 
