@@ -15,7 +15,14 @@ You should have received a copy of the GNU General Public License
 along with tinybuddha-wisdom.  If not, see <http://www.gnu.org/licenses/>.
 """
 
-from http.client import HTTPConnection
+import sys
+
+major_version = sys.version[:3].split('.')[0]
+
+if(major_version == '2'):
+    from httplib import HTTPConnection
+if(major_version == '3'):
+    from http.client import HTTPConnection
 
 class TinyBuddhaWisdom:
     def fetch(self):
@@ -38,7 +45,12 @@ class TinyBuddhaWisdom:
             'User-Agent': 'Mozilla/5.0'}        
 
         response = h1.getresponse()
-        data = str(response.read(), 'utf-8')
+
+        if(major_version == '2'):
+            data = str(response.read())
+
+        if(major_version == '3'):
+            data = str(response.read(), 'utf-8')
 
         return data 
 

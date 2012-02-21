@@ -1,6 +1,6 @@
 # tinybuddha-wisdom
 
-The [Tiny Buddha](http://www.tinybuddha.com) wisdoms for your shell. Thanks Lori (the author) for granting the use of her site in such nerdy way :).
+The [Tiny Buddha](http://www.tinybuddha.com) wisdoms for your shell. Thanks Lori (the author) for granting the use of her site in such nerdy way :). Compatible with Python 2.x and Python 3.x.
 
 Add it to your shell startup configuration and everytime you login or spawn a shell you'll be greeted with the latest wisdom quote. 
 
@@ -15,7 +15,7 @@ localhost :: ~ %
 
 ## Installation
 
-Add the following line to your e.g. .zshrc, .bashrc. It depends which shell you're actually using. It is important to use Python 3.0 or later (because http.client is used).  
+Add the following line to your e.g. .zshrc, .bashrc. It depends which shell you're actually using.   
 
 <pre>
 $ cd ~
