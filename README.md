@@ -22,7 +22,7 @@ $ git clone git://github.com/jpzk/tinybuddha-wisdom.git
 
 add the following to your shell startup configuration:
 <pre>
-python3 ~/tinybuddha-wisdom/tinybuddha-wisdom/tinybuddha-wisdom.py
+python ~/tinybuddha-wisdom/tinybuddha-wisdom/tinybuddha-wisdom.py
 </pre>
 
 ## License 
