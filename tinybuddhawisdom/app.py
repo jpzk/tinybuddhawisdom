@@ -30,7 +30,7 @@ class TinyBuddhaWisdom:
             h1 = HTTPConnection('tinybuddha.com')       
             h1.request('GET', '/wp-content/plugins/tiny-buddha-host/wisdom.txt') 
         except Exception:
-            return "\"If you are patient in one moment of anger" +\
+            return "\"If you are patient in one moment of anger " +\
                    "you will escape one hundred days of sorrow.\" " +\
                    "-Chinese Proverb" 
 
@@ -54,4 +54,5 @@ class TinyBuddhaWisdom:
 
         return data 
 
-print("Tiny Buddha: " + TinyBuddhaWisdom().fetch())
+def main():
+    print("Tiny Buddha: " + TinyBuddhaWisdom().fetch())

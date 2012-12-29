@@ -20,9 +20,17 @@ $ cd ~
 $ git clone git://github.com/jpzk/tinybuddha-wisdom.git
 </pre>
 
-add the following to your shell startup configuration:
+and then install tinybuddha-wisdom with setup.py
+
 <pre>
-python3 ~/tinybuddha-wisdom/tinybuddha-wisdom/tinybuddha-wisdom.py
+$ sudo python setup.py install
+</pre>
+
+now you can run tinybuddha by the shell program 'tinybuddha' and add it to your shell startup.
+
+<pre>
+$ tinybuddha
+Tiny Buddha: "He who trims himself to suit everyone will soon whittle himself away." ~Raymond Hull
 </pre>
 
 ## License 
