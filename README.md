@@ -26,7 +26,7 @@ and then install tinybuddha-wisdom with setup.py
 $ sudo python setup.py install
 </pre>
 
-now you can run tinybuddha by the shell program 'tinybuddha' and add it to your shell startup.
+now you can simply run the program 'tinybuddha' or add it to your shell startup file
 
 <pre>
 $ tinybuddha
