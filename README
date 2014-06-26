@@ -16,7 +16,7 @@ localhost :: ~ %
 Add the following line to your e.g. .zshrc, .bashrc. It depends which shell you're actually using. Install Tinybuddha Wisdom over PyPI:
 
 <pre>
-pip install tinybuddhawisdom
+# pip install tinybuddhawisdom
 </pre>
 
 ## License 
